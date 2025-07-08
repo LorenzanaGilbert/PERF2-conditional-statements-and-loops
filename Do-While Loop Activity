@@ -1,0 +1,16 @@
+// Set the correct password (in a real application, this would be handled more securely)
+const correctPassword = "password123"; // Replace with a more secure password management method
+
+// Use a do-while loop to repeatedly ask for the password
+let password;
+do {
+  password = prompt("Enter the password:");
+  if (password === null) { // Handle the user canceling the prompt
+    console.log("Password entry cancelled.");
+    return; // Exit the program
+  }
+} while (password !== correctPassword);
+
+
+// If the loop completes, the password is correct
+console.log("Password accepted. Access granted.");
