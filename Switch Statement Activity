@@ -1,0 +1,29 @@
+// Prompt the user to enter a day of the week
+let day = prompt("Enter a day of the week (e.g., Monday, Tuesday):").toLowerCase();
+
+// Use a switch statement to map days to tasks
+switch (day) {
+  case "monday":
+    console.log("Task for Monday: Plan the week's activities.");
+    break;
+  case "tuesday":
+    console.log("Task for Tuesday: Attend meetings.");
+    break;
+  case "wednesday":
+    console.log("Task for Wednesday: Work on project X.");
+    break;
+  case "thursday":
+    console.log("Task for Thursday: Prepare for the presentation.");
+    break;
+  case "friday":
+    console.log("Task for Friday: Review the week's progress.");
+    break;
+  case "saturday":
+    console.log("Task for Saturday: Relax and recharge.");
+    break;
+  case "sunday":
+    console.log("Task for Sunday: Plan for the next week.");
+    break;
+  default:
+    console.log("Invalid day entered.");
+}
